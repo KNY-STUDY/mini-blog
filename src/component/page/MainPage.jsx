@@ -30,13 +30,13 @@ function MainPage(props) {
     return (
         <Wrapper>
             <Container>
-                <Button title="글 작성하기" onClick={()=>{
-                    navigate("/post-write");
+                <Button title="LOGIN" onClick={()=>{
+                    navigate("/login-page");
                 }}/>
 
                 <PostList posts={data} onClickItem={(item) => {
                     navigate(`/post/${item.id}`);
-                }}q></PostList>
+                }}></PostList>
             </Container>
         </Wrapper>
     )
